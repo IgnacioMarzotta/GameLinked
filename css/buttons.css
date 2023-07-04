@@ -1,0 +1,104 @@
+.button-container {
+	display: inline-block;
+	margin: 10px 10px;
+	cursor: pointer;
+	font-weight: 400;
+	letter-spacing: 2px;
+	height: 45px;
+	width: 200px;
+	-webkit-perspective: 1000;
+	-ms-perspective: 1000;
+	perspective: 1000;
+}
+.button-container .flipper {
+	transition: all 0.5s ease-in-out;
+	-webkit-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	position: relative;
+}
+.button-container .button {
+	height: 45px;
+	width: 200px;
+	border-radius: 7px;
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	-webkit-box-shadow: 1px 2px 4px -1px rgba(60, 60, 60, 0.64);
+	box-shadow: 1px 2px 4px -1px rgba(60, 60, 60, 0.64);
+}
+.button-container .button i.fa {
+	color: white;
+	font-size: 20px;
+	margin: auto;
+	text-shadow: 0.5px 1px 2px #3c3c3c;
+}
+.button-container .button.front {
+	z-index: 10;
+}
+.button-container .button.back {
+	color: white;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+.button-flip-vertical .flipper-flip-vertical {
+	transform-origin: 100% 22.5px;
+}
+
+.button-flip-vertical:hover .flipper-flip-vertical {
+	transform: rotateX(-180deg);
+}
+
+.button-flip-vertical .front-xbox {
+	background-image: linear-gradient(90deg, #3b9a4b, #2abb2a);
+}
+.button-flip-vertical .back-xbox {
+	transform: rotateX(180deg);
+	background-image: linear-gradient(90deg, #41983b, #278e20);
+	text-align: center;
+	color: white;
+}
+
+.button-flip-vertical .front-playstation {
+	background-image: linear-gradient(90deg, #20438e, #3b5998);
+}
+.button-flip-vertical .back-playstation {
+	transform: rotateX(180deg);
+	background-image: linear-gradient(90deg, #3b5998, #20438e);
+	text-align: center;
+	color: white;
+}
+
+.button-flip-vertical .front-steam {
+	background-image: linear-gradient(90deg, #515151, #7b7b7b);
+}
+.button-flip-vertical .back-steam {
+	transform: rotateX(180deg);
+	background-image: linear-gradient(90deg, #7b7b7b, #515151);
+	text-align: center;
+	color: white;
+}
+
+.button-flip-vertical .front-meta {
+	background-image: linear-gradient(90deg, #6f208e, #2e2f86);
+}
+.button-flip-vertical .back-meta {
+	transform: rotateX(180deg);
+	background-image: linear-gradient(90deg, #2e2f86, #6f208e);
+	text-align: center;
+	color: white;
+}
+
+.button-flip-vertical .front-switch {
+	background-image: linear-gradient(90deg, #d40000, #920000);
+}
+.button-flip-vertical .back-switch {
+	transform: rotateX(180deg);
+	background-image: linear-gradient(90deg, #920000, #d40000);
+	text-align: center;
+	color: white;
+}
