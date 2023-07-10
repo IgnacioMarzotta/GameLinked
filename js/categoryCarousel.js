@@ -5,7 +5,7 @@ $(document).ready(function(){
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 2000,
-      dots:true,
+      dots:false,
       centerMode: true,
       responsive: [{
         breakpoint: 1024,
@@ -23,7 +23,7 @@ $(document).ready(function(){
           slidesToScroll: 2,
           dots: true,
           infinite: true,
-  
+
         }
       },  {
         breakpoint: 480,
